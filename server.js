@@ -2,7 +2,7 @@
 var express = require("express");
 var path = require("path");
 var fs = require("fs");
-var uuidv1 = require("uuid/v1");
+var uuidv1 = require("uuidv1");
 
 // localhost set up on 1010 PORT
 var app = express();
@@ -53,4 +53,14 @@ app.delete("/api/notes/:id", function(req, res) {
         JSON.stringify(updatedJSON)
     );
     res.json(updatedJSON);
+});
+
+function getNoteJSON() {
+    var content = fs.readFileSync(path.join(__dirname, "db", "db.json"));
+    return JSON.parse(content);
+}
+
+// server listen on PORT 1010
+app.listen(PORT, function() {
+    console.log("Active on PORT " + PORT);
 });

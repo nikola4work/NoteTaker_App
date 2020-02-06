@@ -6,7 +6,7 @@ var uuidv1 = require("uuidv1");
 
 // localhost set up on 1010 PORT
 var app = express();
-var PORT = process.env.port || 1010;
+var PORT = process.env.PORT || 1010;
 
 app.use(express.urlencoded.apply({ extended: true }));
 app.use(express.json());

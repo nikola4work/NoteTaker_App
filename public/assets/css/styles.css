@@ -1,70 +1,169 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.image-large {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTNKmR4h7QNJAsA0JmQSIQ-tf1lCa2eshUMvKn1mGYM9bxJkjOe");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.img2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcThijVDRNE_AdShaeY-gGXx4Eqp4VVd4Z7Zl9X7HON_DB3nHwKy");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-family: "Ma Shan Zheng", cursive;
+    font-size: 60px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.6s;
+}
+
+.btn {
+    font-size: 30px;
+    transition: transform 0.6s;
+    color: #fff;
+    outline: none;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #fff;
+    color: #000000;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.1);
+    background-color: #fff;
+    color: #000000;
+}
+
+.container {
+    color: #fff;
+    font-family: "Ma Shan Zheng", cursive;
+    font-size: 60px;
 }
 
 .save-note {
-  display: none;
+    display: none;
 }
 
 .icons i {
-  margin-left: 15px;
-  margin-right: 15px;
-  font-size: 1.5rem;
-  cursor: pointer;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
-.note-textarea, .note-title {
-  color: #000000;
-  width: 100%;
-  outline: none;
-  border: none;
+.note-textarea,
+.note-title {
+    color: #000000;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-family: "Lobster", cursive;
+    font-family: "Righteous", cursive;
 }
 
 .note-textarea {
-  resize: none;
-  height: calc(100% - 63px);
-  padding-top: 15px;
+    resize: none;
+    height: calc(100% - 63px);
+    padding-top: 25px;
+    padding-left: 30px;
+    text-align: left;
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #fff;
 }
 
 .note-title {
-  height: 50px;
-  margin-top: 13px;
-  font-size: 3rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 50px;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    margin-bottom: 20px;
 }
 
-.note-title:read-only, .note-textarea:read-only {
-  color: #757575;
-}
-
-.list-container .card {
-  height: calc(100vh - 70px);
-  border-bottom: none;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
+.note-title:read-only,
+.note-textarea:read-only {
+    color: #000000;
 }
 
 .list-container {
-  padding-left: 0;
+    height: calc(100vh - 70px);
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.list-container {
+    padding-left: 10px;
 }
 
 .list-container .list-group,
 .list-container .list-group-item:first-child,
 .list-container .card {
-  border-top: none;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+.list-group-item {
+    border-bottom: 1px solid #fff;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #fff;
+    text-transform: capitalize;
+    font-family: "Lobster", cursive;
+    font-family: "Righteous", cursive;
+    font-size: 25px;
 }
 
 .list-container i {
-  font-size: 1.1rem;
-  cursor: pointer;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 
 .list-container .list-group-item {
-  border-left: none;
-  border-right: none;
-  padding: 20px;
-  cursor: pointer;
+    border-left: none;
+    border-right: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.fa-save {
+    transition: transform 0.3s;
+}
+
+.fa-save:hover {
+    transform: scale(1.2);
+}
+
+.fa-pen {
+    transition: transform 0.3s;
+}
+
+.fa-pen:hover {
+    transform: scale(1.2);
 }
